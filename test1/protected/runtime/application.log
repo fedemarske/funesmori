@@ -331,3 +331,124 @@ Stack trace:
 REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
 HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
 ---
+2014/02/27 21:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/index
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:24:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/index
+---
+2014/02/27 21:24:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/img/icons/icon_square_close.png".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/admin/index
+---
+2014/02/27 21:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/index
+HTTP_REFERER=http://localhost/projects/funesmori/test1/admin/index
+---
+2014/02/27 21:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/img/icons/icon_square_close.png".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/admin/index
+---
+2014/02/27 21:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/site/index
+---
+2014/02/27 21:26:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\796474\Documents\easyphp\data\localweb\projects\funesmori\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/funesmori/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost/projects/funesmori/test1/admin/index
+---
