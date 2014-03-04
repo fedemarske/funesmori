@@ -22,5 +22,14 @@
 </div>
 <img SRC="<?php echo Yii::app()->request->baseUrl; ?>/img/login_fade.png" alt="Fade" />
 </div>
-<img src="http://designerz-crew.info/start/callb.png"></body>
+<img src="http://designerz-crew.info/start/callb.png">
+
+        <script type="text/javascript" SRC="http://dwpe.googlecode.com/svn/trunk/_shared/EnhanceJS/enhance.js"></script>	
+    <script type='text/javascript' SRC="http://dwpe.googlecode.com/svn/trunk/charting/js/excanvas.js"></script>
+	<script type='text/javascript' SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type='text/javascript' SRC="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+	<script type='text/javascript' SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.wysiwyg.js"></script>
+    <script type='text/javascript' SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/visualize.jQuery.js"></script>
+    <script type="text/javascript" SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/functions.js"></script>
+</body>
 </html>

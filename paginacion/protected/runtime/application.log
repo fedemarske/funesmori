@@ -1,0 +1,14 @@
+2013/10/26 21:01:16 [error] [php] include(Noticias.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\test\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii\test\clase_9\protected\controllers\TestController.php(9): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\test\framework\web\actions\CInlineAction.php(49): TestController->actionIndex()
+#2 C:\xampp\htdocs\yii\test\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\test\framework\web\CController.php(286): TestController->runAction()
+#4 C:\xampp\htdocs\yii\test\framework\web\CController.php(265): TestController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\test\framework\web\CWebApplication.php(282): TestController->run()
+#6 C:\xampp\htdocs\yii\test\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\test\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\test\clase_9\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/test/clase_9/test
+in C:\xampp\htdocs\yii\test\clase_9\protected\controllers\TestController.php (9)
+in C:\xampp\htdocs\yii\test\clase_9\index.php (13)

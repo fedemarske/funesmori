@@ -474,3 +474,493 @@ Stack trace:
 REQUEST_URI=/projects/funesmori/test1/admin/img/icons/icon_square_close.png
 HTTP_REFERER=http://localhost/projects/funesmori/test1/admin/index
 ---
+2014/03/03 22:30:24 [error] [php] include(Usuarios.php): failed to open stream: No such file or directory (C:\xampp\htdocs\projects\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\test1\protected\models\Users.php(32): spl_autoload_call()
+#1 C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php(22): Users->login()
+#2 C:\xampp\htdocs\projects\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#3 C:\xampp\htdocs\projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\projects\yii\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\projects\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\projects\yii\test1\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/yii/test1/
+in C:\xampp\htdocs\projects\yii\test1\protected\models\Users.php (32)
+in C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php (22)
+in C:\xampp\htdocs\projects\yii\test1\index.php (13)
+2014/03/03 22:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/yii/test1/index
+---
+2014/03/03 22:36:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+---
+2014/03/03 22:36:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:36:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:36:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+---
+2014/03/03 22:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+---
+2014/03/03 22:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+---
+2014/03/03 22:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/site/login
+---
+2014/03/03 22:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/icons/...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/site/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/site/login
+---
+2014/03/03 22:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/login
+---
+2014/03/03 22:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/login
+---
+2014/03/03 22:43:42 [error] [php] include(Usuarios.php): failed to open stream: No such file or directory (C:\xampp\htdocs\projects\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\test1\protected\models\Users.php(32): spl_autoload_call()
+#1 C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php(29): Users->login()
+#2 C:\xampp\htdocs\projects\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
+#3 C:\xampp\htdocs\projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\projects\yii\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\projects\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\projects\yii\test1\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/yii/test1/admin/login
+in C:\xampp\htdocs\projects\yii\test1\protected\models\Users.php (32)
+in C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php (29)
+in C:\xampp\htdocs\projects\yii\test1\index.php (13)
+2014/03/03 23:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 03:52:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 03:54:18 [error] [php] Undefined variable: session (C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\main2.php:82)
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\widgets\CContentDecorator.php(76): AdminController->renderFile()
+#1 C:\xampp\htdocs\projects\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\projects\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(300): AdminController->endWidget()
+#5 C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\column1.php(6): AdminController->endContent()
+#6 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#8 C:\xampp\htdocs\projects\yii\framework\web\CController.php(784): AdminController->renderFile()
+#9 C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php(10): AdminController->render()
+#10 C:\xampp\htdocs\projects\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#11 C:\xampp\htdocs\projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\projects\yii\framework\web\CController.php(286): AdminController->runAction()
+#13 C:\xampp\htdocs\projects\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#14 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#15 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\projects\yii\test1\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/yii/test1/admin/index
+in C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\main2.php (82)
+in C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php (10)
+2014/03/04 03:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 04:01:48 [error] [php] Undefined variable: session (C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\main2.php:78)
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\widgets\CContentDecorator.php(76): AdminController->renderFile()
+#1 C:\xampp\htdocs\projects\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\projects\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(300): AdminController->endWidget()
+#5 C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\column1.php(6): AdminController->endContent()
+#6 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\projects\yii\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#8 C:\xampp\htdocs\projects\yii\framework\web\CController.php(784): AdminController->renderFile()
+#9 C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php(10): AdminController->render()
+#10 C:\xampp\htdocs\projects\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#11 C:\xampp\htdocs\projects\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\projects\yii\framework\web\CController.php(286): AdminController->runAction()
+#13 C:\xampp\htdocs\projects\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#14 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#15 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\projects\yii\test1\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/yii/test1/admin/index
+in C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\main2.php (78)
+in C:\xampp\htdocs\projects\yii\test1\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\projects\yii\test1\protected\controllers\AdminController.php (10)
+2014/03/04 04:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 04:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 04:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 04:43:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:08:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:11:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:13:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:15:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---
+2014/03/04 16:17:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\xampp\htdocs\projects\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\projects\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\projects\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/img/icons...')
+#3 C:\xampp\htdocs\projects\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\projects\yii\test1\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/projects/yii/test1/admin/img/icons/icon_square_close.png
+HTTP_REFERER=http://localhost:8080/projects/yii/test1/admin/index
+---

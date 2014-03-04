@@ -9,6 +9,10 @@
 <link href="<?php echo Yii::app()->request->baseUrl; ?>/themes/blue/styles.css" rel="stylesheet" type="text/css" />
 <!-- Theme End -->
 </head>
+<?php 
+$session=new CHttpSession;
+$session->open(); 
+ ?>
 <body id="homepage">
 	<div id="header">
     	<a href="" title=""><img SRC="<?php echo Yii::app()->request->baseUrl; ?>/img/cp_logo.png" alt="Control Panel" class="logo" /></a>
@@ -27,22 +31,14 @@
     <!-- Top Breadcrumb End -->
     <div id="rightside">
         <!-- Content Box Start -->
-        <div class="contentcontainer">
-            <div class="headings alt">
-                <h2>Test</h2>
-            </div>
-            <div class="contentbox">
-				<?php echo $content; ?>
-            </div>
-        </div>
-        <!-- Content Box End -->
-        
-        
-            
-        </div>
+
+
+                <?php echo $content; ?>
+         
+    </div>
 
         <!-- Content Box Start -->
-        <div class="contentcontainer">
+<!--        <div class="contentcontainer">
             <div class="headings">
                 <h2>Notice Box Styles</h2>
             </div>
@@ -65,7 +61,7 @@
                 </div>
                 <div style="clear: both;"></div>
             </div>
-        </div>
+        </div>-->
         <!-- Content Box End -->
         <div id="footer">
         	&copy; Copyright 2014 Pungas S.A.
@@ -77,28 +73,24 @@
         <!-- Left Dark Bar Start -->
     <div id="leftside">
     	<div class="user">
-        	<img SRC="<?php echo Yii::app()->request->baseUrl; ?>/img/avatar.png" width="44" height="44" class="hoverimg" alt="Avatar" />
+            <img SRC="<?php echo Yii::app()->request->baseUrl; ?>/img/avatar.png" width="44" height="44" class="hoverimg" alt="Avatar" />
             <p>Logged in as:</p>
-            <p class="username">Administrator</p>
-            <p class="userbtn"><a href="#" title="">Profile</a></p>
-            <p class="userbtn"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout" title="">Log out</a></p>
+            <p class="username"><?php echo $session["user"]?></p>
+<!--            <p class="userbtn"><a href="#" title="">Profile</a></p>-->
+            <p class="userbtn"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/logout" title="">Log out</a></p>
         </div>
-        <div class="notifications">
+<!--        <div class="notifications">
         	<p class="notifycount"><a href="" title="" class="notifypop">10</a></p>
             <p><a href="" title="" class="notifypop">New Notifications</a></p>
             <p class="smltxt">(Click to open notifications)</p>
-        </div>
-        
+        </div>       -->
         
        	<?php $this->widget('zii.widgets.CMenu',array(
-                        'htmlOptions'=>array("class"=>"navigation"),
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Tabla', 'url'=>array('/admin/index')),
-			),
-		)); ?>            
+                'htmlOptions'=>array("class"=>"navigation"),
+                'items'=>array(
+                        array('label'=>'Home', 'url'=>array('/admin/index'))
+                ),
+        )); ?>            
     </div>
     <!-- Left Dark Bar End --> 
     
@@ -124,7 +116,7 @@
             <li>
             	<a href="#" title=""><img SRC="img/icons/icon_square_close.png" alt="Close" class="closenot" /></a>
             	<h5><a href="#" title="">New group created</a></h5>
-                <p>“Web Design” group created on 12.12.2010</p>
+                <p>ï¿½Web Designï¿½ group created on 12.12.2010</p>
             </li>
             <li>
             	<a href="#" title=""><img SRC="img/icons/icon_square_close.png" alt="Close" class="closenot" /></a>
@@ -143,9 +135,9 @@
     
     <script type="text/javascript" SRC="http://dwpe.googlecode.com/svn/trunk/_shared/EnhanceJS/enhance.js"></script>	
     <script type='text/javascript' SRC="http://dwpe.googlecode.com/svn/trunk/charting/js/excanvas.js"></script>
-	<script type='text/javascript' SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type='text/javascript' SRC="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type='text/javascript' SRC="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
-	<script type='text/javascript' SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.wysiwyg.js"></script>
+    <script type='text/javascript' SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.wysiwyg.js"></script>
     <script type='text/javascript' SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/visualize.jQuery.js"></script>
     <script type="text/javascript" SRC="<?php echo Yii::app()->request->baseUrl; ?>/js/functions.js"></script>
     

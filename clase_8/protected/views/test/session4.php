@@ -1,0 +1,1 @@
+<p><?php echo CHtml::link("Crear Sessión",Yii::app()->request->baseUrl."/test/session1",array("class"=>"link","title"=>"Crear Sessión"));?></p>
